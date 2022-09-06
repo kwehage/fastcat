@@ -52,9 +52,13 @@ configure_file(
 find_package(YamlCpp REQUIRED 0.6.3)
 
 include(FetchContent)
+# FetchContent_Declare(jsd
+#     GIT_REPOSITORY https://github.com/nasa-jpl/jsd.git
+#     GIT_TAG v1.8.1
+#     )
 FetchContent_Declare(jsd
-    GIT_REPOSITORY https://github.com/nasa-jpl/jsd.git
-    GIT_TAG v1.8.1
+    GIT_REPOSITORY git@github.com:kwehage/jsd.git
+    GIT_TAG dev/kwehage-sdo-setting
     )
 FetchContent_MakeAvailable(jsd)
 
